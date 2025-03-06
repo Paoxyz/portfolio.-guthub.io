@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="pao.css">
+</head>
+<body>
 
+    <input type="checkbox" id="darkModeToggle">
+    <label for="darkModeToggle" class="dark-mode-label">🌙</label>
+
+    <div class="container">
+        <div class="profile-header">
+            <div class="image-container">
+                <img src="paoisimg.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+            <h1>Paolo Garcia</h1>
+        </div>
+
+        <div class="section">
+            <p>I'm a <span class="highlight">Student</span> who is still learning and <span class="highlight">Improving</span> at the same time.</p>
+        </div>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Passionate and weak in coding, especially in C++. Currently working on a project called 'Vigilant' to contribute to environmental and security solutions.</p>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Vigilant</strong> - A project aimed at improving security and environmental awareness.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>C++ Programming</li>
+                <li>Web Development (HTML, CSS)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <p>Find me on:</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="mailto:your@email.com">Email Me</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
