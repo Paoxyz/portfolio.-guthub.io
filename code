@@ -47,8 +47,8 @@
             <h2>Contact</h2>
             <p>Find me on:</p>
             <div class="social-links">
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/share/15odyWVx62/?mibextid=qi2Omg" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/pao.xyz?igsh=YnpnY2NwZXh2OWY4"_blank">Instagram</a>
                 <a href="mailto:your@email.com">Email Me</a>
             </div>
         </div>
@@ -56,3 +56,145 @@
 
 </body>
 </html>
+
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --container-bg: white;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --highlight-color: yellow;
+}
+
+#darkModeToggle:checked ~ .container,
+#darkModeToggle:checked ~ .dark-mode-label {
+    --bg-color: #181818;
+    --text-color: #f4f4f4;
+    --container-bg: #222;
+    --shadow-color: rgba(255, 255, 255, 0.1);
+    --highlight-color: #ffcc00;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: var(--container-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--shadow-color);
+    transition: background 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--highlight-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--container-bg);
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image is cropped properly */
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: var(--container-bg);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--shadow-color);
+    transition: background 0.3s, box-shad-shadow 0.3s;
+.highlight {
+    background-color: var(--highlight-color);
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+#darkModeToggle {
+    display: none;
+}
+
+.dark-mode-label {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background: var(--container-bg);
+    color: var(--text-color);
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--shadow-color);
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.dark-mode-label:hover {
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .dark-mode-label {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
